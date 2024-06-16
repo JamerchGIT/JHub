@@ -968,22 +968,9 @@ local MainTab = Window:CreateTab("Misc.", nil) -- Title, Image
 local MainSection = MainTab:CreateSection("GUIs")
 
 
-local Button = Tab:CreateButton({
-    Name = "Chat Bypasser",
+local Button = MainTab:CreateButton({
+    Name = "Chat Bypasser (broken ): )",
     Callback = function()
-    --[[
-      // thanks voidfunction for thread & the chat bypass method itself
-      // thanks AnthonyIsntHere for Reset Topic & Anti ChatLogger
-      // thanks harun for coding expertise
-      // more methods soon, will be updated
-
-      [+] 07/20: Released.
-                 Readded Anthony's Anti Chat Logger (oops)
-     
-      [+] 07/28: Updated.
-                                                          ]]--
-
-
 
 repeat task.wait() until game:IsLoaded()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AnthonyIsntHere/anthonysrepository/main/scripts/AntiChatLogger.lua", true))()
