@@ -43,6 +43,7 @@ Rayfield:Notify({
    },
 },
 })
+ 
 
 
 local Button = MainTab:CreateButton({
@@ -964,7 +965,16 @@ local Button = MainTab:CreateButton({
     end,
  })
 
-local MainTab = Window:CreateTab("Misc.", nil) -- Title, Image
+ local Input = MainTab:CreateInput({
+    Name = "Name Changer (soon)",
+    PlaceholderText = "Name",
+    RemoveTextAfterFocusLost = true,
+    Callback = function(Value)
+
+    end,
+ })
+
+local MainTab = Window:CreateTab("Misc/Community", nil) -- Title, Image
 local MainSection = MainTab:CreateSection("GUIs")
 
 
