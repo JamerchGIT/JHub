@@ -974,7 +974,7 @@ local Button = MainTab:CreateButton({
     end,
  })
 
-local MainTab = Window:CreateTab("Misc/Community", nil) -- Title, Image
+local MainTab = Window:CreateTab("Misc.", nil) -- Title, Image
 local MainSection = MainTab:CreateSection("GUIs")
 
 
