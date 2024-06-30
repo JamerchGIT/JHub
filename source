@@ -356,17 +356,18 @@ local Button = MainTab:CreateButton({
 
  local MainSection = MainTab:CreateSection("Player")
 
- local Button = MainTab:CreateButton({
-        Name = "Name Changer (soon)",
-        PlaceholderText = "Name",
-        RemoveTextAfterFocusLost = true,
-        Callback = function(Value)
-    
-        end,
-     })
+
+ local Input = MainTab:CreateInput({
+    Name = "Name Changer (soon)",
+    PlaceholderText = "Name",
+    RemoveTextAfterFocusLost = true,
+    Callback = function(Value)
+
+    end,
+ })
 
 
-     local Input = MainTab:CreateInput({
+     local Button = MainTab:CreateButton({
     Name = "Reset (J)",
     Callback = function()
         local function forceResetAction()
