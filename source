@@ -2397,3 +2397,25 @@ local Button = MainTab:CreateButton({
         coroutine.wrap(BGGWLP_fake_script)()
     end,
  })
+
+ local MainSection = MainTab:CreateSection("Credits")
+
+ local Dropdown = MainTab:CreateDropdown({
+    Name = "Testers",
+    Options = {"Jamer"},
+    CurrentOption = {""},
+    MultipleOptions = false,
+    Flag = "Creds1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+    Callback = function(Option)
+    end,
+ })
+
+ local Dropdown = MainTab:CreateDropdown({
+    Name = "Special Thanks",
+    Options = {"TheWeakestPlayer/Noob","1 FO","Roblox","my dad"},
+    CurrentOption = {""},
+    MultipleOptions = false,
+    Flag = "Creds2", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+    Callback = function(Option)
+    end,
+ })
