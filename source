@@ -2398,8 +2398,8 @@ local Button = MainTab:CreateButton({
     end,
  })
 
- local MainSection = MainTab:CreateSection("Credits")
 
+ local MainTab = Window:CreateTab("Credits", nil) -- Title, Image
  local Dropdown = MainTab:CreateDropdown({
     Name = "Testers",
     Options = {"Jamer"},
